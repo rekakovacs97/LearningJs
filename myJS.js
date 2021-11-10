@@ -30,33 +30,34 @@ if( a == b){
   }
 
 
-//function myFunction(){
- // document.getElementById("first").classList.add("first--test'");
-//}
+/*function myFunction(){
+  document.getElementById("first").classList.add("first--test'");
+}
 
 
 
- // document.getElementById("info").addEventListener("click", function() {
-   // document.getElementsByClassName("first").addClass("first--test");
-  //});
+document.getElementById("info").addEventListener("click", function() {
+   document.getElementsByClassName("first").addClass("first--test");
+  });
 
-//}
+}
 
-//document.getElementById("MyElement").classList.add('MyClass');
-
-
-
-//function myFunction() {
-   // document.getElementById("info").addEventListener("click", function() {
-  //      document.getElementById("first").addId("first--test");
- //     });
-  //}
-
- // $(".something").click(function(){
- //   $(this).addClass("style");
-//});
+document.getElementById("MyElement").classList.add('MyClass');
 
 
-//$( document ).ready(function() {
-  //   $( ".first" ).addClass( "first--test" );
-//});
+
+function myFunction() {
+    document.getElementById("info").addEventListener("click", function() {
+        document.getElementById("first").addId("first--test");
+      });
+  }
+
+  $(".something").click(function(){
+    $(this).addClass("style");
+});
+
+
+$( document ).ready(function() {
+     $( ".first" ).addClass( "first--test" );
+});
+*/
