@@ -29,6 +29,29 @@ if( a == b){
    console.log("nem egyenlo");
   }
 
+// Data types
+let yourAge = 18; //number
+let yourName = 'Joe' //string
+let name = {fist: 'Jane' , last: 'Doe'}; //object
+let truth = false;  //boolean
+let groceries = ['apple' , 'banana' , 'tomato']; //array 
+
+console.log(groceries);
+console.log(groceries.slice(2,6));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*function myFunction(){
   document.getElementById("first").classList.add("first--test'");
