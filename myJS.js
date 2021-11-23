@@ -49,7 +49,7 @@ let moreFruit = 'banana\nadssdfdspple'; //new line \n
 
 console.log(fruit.length);
 console.log(moreFruit);
-console.log(fruit.indexOf('nan'));
+console.log(fruit.indexOf('b'));          // a b - a 0, pozition van, ezt megkapja es eremenykent kiirja a 0-at, a nan-nal 2ot ir ki
 console.log(fruit.slice(2 , 6));               //kiirja a 2tol a 6. betuig
 console.log(fruit.replace('ana' , '1234'));   //replace ana to 1234
 console.log(fruit.toUpperCase());
@@ -67,6 +67,7 @@ fruits = new Array('banana' , 'apple' , 'orange' , 'pineapples')  //other ay to 
 //alert(fruits[1]);     //acces valuea at index 1 
 fruits[0] = 'pear'; //change the value
 console.log(fruits);
+
 for(let i = 0; i < fruits.length; i++) { //i=0 a 0.a pear 0 kisebb mint 4 (4elem=length, 0+1 )
   console.log(fruits[i]);
 }
@@ -78,6 +79,48 @@ function onFruitsClick(fruit) {
    }
  } 
 }
+
+//array common methods
+console.log('to string \n' , fruits.toString());
+console.log(fruits.join(' hi- ')); //join element
+console.log(fruits, fruits.pop() , fruits);//pop off the last element  REMOVE LAST ITEM
+console.log(fruits.push('blackberry') , fruits); // add a new element  APPENDS
+//console.log(fruits); // a folotte levo ugyanez csak leroviditve
+
+console.log(fruits[3]);
+
+fruits[4] = 'new fruit';   //adding a new item to the array / list
+console.log(fruits);
+
+fruits[fruits.length] = 'tomato';  //adding a new item 
+console.log(fruits);
+
+console.log(fruits.shift(), fruits ); //remove first element in an array
+fruits.unshift('kiwi'); //add first element to the array
+console.log(fruits);
+
+let vegetables = ['tomato' , 'potato' , 'broccoli'];  //combine two arrays + 
+let allGroceries = fruits.concat(vegetables);
+console.log(allGroceries);
+console.log(allGroceries.slice(1,4)) ; //kiirja a 1,2,3 itemet
+console.log(allGroceries.reverse());    //reverse an array - megfordirja as sorrendet
+console.log(allGroceries.sort())  //sort alphabet - abc sorrenbe rakja
+
+vegetables.splice(1, 0 , 'karfiol'); //beteszi az elsoo poziciora, 1   0-uj elemet adok hozza 
+console.log(vegetables);
+
+vegetables.splice(2, 3, 'karfiol'); //a 2.pozociotol egy darabot helyetesit karfiollal 
+console.log(vegetables);
+
+vegetables.splice(0, 1); //a 0. poziciorol kitorol egy(db) elemet 
+console.log(vegetables);
+
+let someNumber = [ 5, 6, 3, 555, 18, 25, 94];
+console.log(someNumber[4]);
+console.log(someNumber.sort(function(a, b) {return a-b})); //novekvo sorted in ascending order
+console.log(someNumber.sort(function(a, b) {return b-a}));  //csokkeno   sorted in descending order
+
+
 
 
 
