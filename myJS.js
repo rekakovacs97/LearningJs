@@ -120,6 +120,32 @@ console.log(someNumber[4]);
 console.log(someNumber.sort(function(a, b) {return a-b})); //novekvo sorted in ascending order
 console.log(someNumber.sort(function(a, b) {return b-a}));  //csokkeno   sorted in descending order
 
+let emptyArray = new Array; 
+for (let num = 5; num < 10; num++) {  //kiirja a szamokat 5tol 9ig
+    emptyArray.push(num);
+}
+console.log(emptyArray);
+
+//Objects in Javascript
+//dictionaries is Python 
+
+let student = {          // student = {first: 'reka'} , last:'kovacs'};
+  first: 'kovacs' , 
+  last: 'reka' ,
+  age:25,
+  height:170,
+  studentInfo: function () {
+    return this.first + '\n' + this.last; 
+  }
+};
+
+//console.log(student.first);
+//student.first = 'notReka';   //change value
+//console.log(student.first);
+//student.age++;
+//console.log(student.age);
+
+console.log(student.studentInfo());
 
 
 
